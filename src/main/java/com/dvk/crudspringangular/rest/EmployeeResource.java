@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/api/employees")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://crud-spring-angular.netlify.app"})
 public class EmployeeResource {
 
     private final EmployeeService employeeService;
